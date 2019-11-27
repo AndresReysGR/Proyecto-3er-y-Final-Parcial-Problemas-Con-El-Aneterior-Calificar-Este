@@ -1,0 +1,16 @@
+﻿<UserControl x:Class="ProyectoFinal3erParcial_Problemas_Con_El_Ateriror.P_SeleccionDePelicula_O_Serie"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:ProyectoFinal3erParcial_Problemas_Con_El_Ateriror"
+             mc:Ignorable="d" 
+             d:DesignHeight="306" d:DesignWidth="504">
+    <Grid>
+        <TextBlock HorizontalAlignment="Left" TextWrapping="Wrap" Text="Agregar nuevo elemento" VerticalAlignment="Top" Margin="10,10,0,0" Height="39" Width="275" FontSize="24"/>
+        <RadioButton x:Name="rbtnPelicula" Content="Pelicula" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="10,49,0,0"  Height="23" Width="88" FontSize="18" Checked="RbtnPelicula_Checked" />
+        <RadioButton x:Name="rbtnSerie" Content="Serie" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="103,49,0,0" Height="23" Width="64" FontSize="18" Checked="RbtnSerie_Checked"/>
+        <Grid x:Name="grdSeriePelicula" HorizontalAlignment="Left" Height="218" Margin="10,73,0,0" VerticalAlignment="Top" Width="484"/>
+
+    </Grid>
+</UserControl>

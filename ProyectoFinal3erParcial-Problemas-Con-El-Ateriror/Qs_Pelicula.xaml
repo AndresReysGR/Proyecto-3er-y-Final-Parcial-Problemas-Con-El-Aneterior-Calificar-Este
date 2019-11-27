@@ -1,0 +1,46 @@
+﻿<UserControl x:Class="ProyectoFinal3erParcial_Problemas_Con_El_Ateriror.Qs_Pelicula"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:ProyectoFinal3erParcial_Problemas_Con_El_Ateriror"
+             mc:Ignorable="d"
+             d:DesignHeight="301" d:DesignWidth="490">
+    <Grid>
+        <TextBlock HorizontalAlignment="Left" TextWrapping="Wrap" Text="Detalles de Pelicula" VerticalAlignment="Top" Margin="10,10,0,0" Height="39" Width="213" FontSize="24"/>
+        <TextBlock HorizontalAlignment="Left" TextWrapping="Wrap" Text="Pelicula" VerticalAlignment="Top" Margin="12,54,0,0" FontSize="14"/>
+        <TextBlock HorizontalAlignment="Left" TextWrapping="Wrap" Text="Titulo:" VerticalAlignment="Top" Margin="12,86,0,0"/>
+        <TextBox x:Name="txtTitulo" HorizontalAlignment="Left" Height="23" TextWrapping="Wrap" VerticalAlignment="Top" Width="417" Margin="63,83,0,0"/>
+        <TextBlock HorizontalAlignment="Left" TextWrapping="Wrap" Text="Año:" VerticalAlignment="Top" Margin="12,119,0,0"/>
+        <TextBox x:Name="txtAño" HorizontalAlignment="Left" Height="23" TextWrapping="Wrap" VerticalAlignment="Top" Width="127" Margin="63,119,0,0"/>
+        <TextBlock HorizontalAlignment="Left" TextWrapping="Wrap" Text="Género:" VerticalAlignment="Top" Margin="208,119,0,0"/>
+        <ComboBox x:Name="cmbGenero" HorizontalAlignment="Left" VerticalAlignment="Top" Width="142" Margin="254,119,0,0">
+            <ComboBoxItem>Acción</ComboBoxItem>
+            <ComboBoxItem>Aventura</ComboBoxItem>
+            <ComboBoxItem>Comedia</ComboBoxItem>
+            <ComboBoxItem>Drama</ComboBoxItem>
+            <ComboBoxItem>Terror</ComboBoxItem>
+            <ComboBoxItem>Musical</ComboBoxItem>
+            <ComboBoxItem>Ciencia ficción</ComboBoxItem>
+            <ComboBoxItem>Suspenso</ComboBoxItem>
+        </ComboBox>
+        <TextBlock HorizontalAlignment="Left" TextWrapping="Wrap" Text="Director:" VerticalAlignment="Top" Margin="12,156,0,0"/>
+        <TextBox x:Name="txtDirector" HorizontalAlignment="Left" Height="23" TextWrapping="Wrap" VerticalAlignment="Top" Width="417" Margin="63,156,0,0"/>
+        <TextBlock HorizontalAlignment="Left" TextWrapping="Wrap" Text="Sinopsis:" VerticalAlignment="Top" Margin="12,185,0,0"/>
+        <TextBox x:Name="txtSinopsis" HorizontalAlignment="Left" Height="65" TextWrapping="Wrap" VerticalAlignment="Top" Width="417" Margin="63,185,0,0"/>
+        <TextBlock HorizontalAlignment="Left" TextWrapping="Wrap" Text="Rating:" VerticalAlignment="Top" Margin="12,259,0,0"/>
+        <ComboBox x:Name="cmbRating" HorizontalAlignment="Left" VerticalAlignment="Top" Width="78" Margin="63,259,0,0" RenderTransformOrigin="0.764,0.614">
+            <ComboBoxItem>⭐</ComboBoxItem>
+            <ComboBoxItem>1✩</ComboBoxItem>
+            <ComboBoxItem>✩⭐</ComboBoxItem>
+            <ComboBoxItem>2✩✩</ComboBoxItem>
+            <ComboBoxItem>✩✩⭐</ComboBoxItem>
+            <ComboBoxItem>3✩✩✩</ComboBoxItem>
+            <ComboBoxItem>✩✩✩⭐</ComboBoxItem>
+            <ComboBoxItem>4✩✩✩✩</ComboBoxItem>
+            <ComboBoxItem>✩✩✩✩⭐</ComboBoxItem>
+            <ComboBoxItem>5✩✩✩✩✩</ComboBoxItem>
+        </ComboBox>
+
+    </Grid>
+</UserControl>

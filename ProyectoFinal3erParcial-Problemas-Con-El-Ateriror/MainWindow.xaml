@@ -1,0 +1,30 @@
+﻿<Window x:Class="ProyectoFinal3erParcial_Problemas_Con_El_Ateriror.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:ProyectoFinal3erParcial_Problemas_Con_El_Ateriror"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid>
+        <ListView x:Name="lstCar" HorizontalAlignment="Left" Height="332" VerticalAlignment="Top" Width="250" Margin="532,11,0,0" SelectionChanged="LstCar_SelectionChanged">
+            <ListView.View>
+                <GridView>
+                    <GridViewColumn DisplayMemberBinding="{Binding Titulo}" Header="Titulo" Width="125"></GridViewColumn>
+                    <GridViewColumn DisplayMemberBinding="{Binding Año}" Header="Año" Width="125"></GridViewColumn>
+                </GridView>
+            </ListView.View>
+        </ListView>
+        <Button x:Name="btnHabEdicion" Visibility="Hidden" Content="Editar" HorizontalAlignment="Left" VerticalAlignment="Top" Width="148" Margin="178,355,0,0" Click="BtnHabEdicion_Click"  />
+        <Button x:Name="btnEliElemento" Visibility="Hidden" Content="Eliminar" HorizontalAlignment="Left" VerticalAlignment="Top" Width="148" Margin="25,380,0,0" Click="BtnEliElemento_Click" />
+        <Button x:Name="btnActEdicion" Visibility="Hidden" Content="Actualizar para Editar" HorizontalAlignment="Left" VerticalAlignment="Top" Width="148" Margin="342,355,0,0" Click="BtnActEdicion_Click" />
+        <Button x:Name="btnAsTitulo" Content="Ordenar de A-Z" HorizontalAlignment="Left" VerticalAlignment="Top" Width="95" Margin="676,350,0,0" Click="BtnAsTitulo_Click" />
+        <Button x:Name="btnDesTitulo" Content="Ordenar de Z-A" HorizontalAlignment="Left" VerticalAlignment="Top" Width="95" Margin="676,374,0,0" Click="BtnDesTitulo_Click" />
+        <Button x:Name="btnAsAño" Content="Ordenar por año mayor" HorizontalAlignment="Left" VerticalAlignment="Top" Width="139" Margin="532,350,0,0" Click="BtnAsAño_Click" />
+        <Button x:Name="btnDesAño" Content="Ordenar por año menor" HorizontalAlignment="Left" VerticalAlignment="Top" Width="139" Margin="532,374,0,0" Click="BtnDesAño_Click" />
+        <Button x:Name="btnGuEleNuevo" Visibility="Hidden" Content="Guardar" HorizontalAlignment="Left" VerticalAlignment="Top" Width="148" Margin="25,355,0,0" Click="BtnGuEleNuevo_Click" />
+        <Button x:Name="btnCanEleNuevo" Visibility="Hidden" Content="Cancelar" HorizontalAlignment="Left" VerticalAlignment="Top" Width="148" Margin="178,380,0,0" Click="BtnCanEleNuevo_Click_1"/>
+        <Button x:Name="btnNueEle" Content="Nuevo elemento" HorizontalAlignment="Left" VerticalAlignment="Top" Width="95" Margin="25,11,0,0" Click="BtnNueEle_Click"  />
+        <Grid x:Name="grdEle" HorizontalAlignment="Left" Height="306" Margin="23,31,0,0" VerticalAlignment="Top" Width="504"/>
+    </Grid>
+</Window>
