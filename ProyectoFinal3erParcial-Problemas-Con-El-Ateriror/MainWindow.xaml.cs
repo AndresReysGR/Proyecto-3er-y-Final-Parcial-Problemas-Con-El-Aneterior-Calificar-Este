@@ -22,20 +22,15 @@ namespace ProyectoFinal3erParcial_Problemas_Con_El_Ateriror
     public partial class MainWindow : Window
     {
         ObservableCollection<T_Extra2> PS = new ObservableCollection<T_Extra2>();
-        ObservableCollection<Qr_Pelicula> Pelicula = new ObservableCollection<Qr_Pelicula>();
-        ObservableCollection<Rs_Serie> Serie = new ObservableCollection<Rs_Serie>();
         public MainWindow()
         {
             InitializeComponent();
 
-            Qr_Pelicula pelicula1 = new Qr_Pelicula("Batman", 1989, "Accion", "Tim Burton", "El caballero oscuro conocido como Batman defiende a la " +
-                "corrupta e insegura ciudad de Gotham de su enemigo principal, un payaso homicida conocido como Joker.", 10);
+            PS.Add(new Qr_Pelicula("Batman", 1989, "Tim Burton",  "Accion", "El caballero oscuro conocido como Batman defiende a la " +
+                "corrupta e insegura ciudad de Gotham de su enemigo principal, un payaso homicida conocido como Joker.", 10));
 
-            Rs_Serie serie1 = new Rs_Serie("Gotham", 2014, "Accion", 5, "Scott White", "El detective James Gordon se desenvuelve por el mundo " +
-                "peligrosamente corrupto de Gotham City, mientras que un joven Bruce Wayne encuentra su camino para convertirse en un héroe.", 10);
-
-            PS.Add(pelicula1);
-            PS.Add(serie1);
+           PS.Add(new Rs_Serie("Gotham", 2014, "Accion", "Scott White",  5,  "El detective James Gordon se desenvuelve por el mundo " +
+                "peligrosamente corrupto de Gotham City, mientras que un joven Bruce Wayne encuentra su camino para convertirse en un héroe.", 10));
             lstCar.ItemsSource = PS;
         }
 
@@ -54,7 +49,17 @@ namespace ProyectoFinal3erParcial_Problemas_Con_El_Ateriror
 
         private void BtnGuEleNuevo_Click(object sender, RoutedEventArgs e)
         {
-            grdEle.Children.Clear();
+            var vPS = ((P_SeleccionDePelicula_O_Serie)(grdEle.Children[0]));
+            if(vPS.rbtnPelicula.IsChecked==true)
+            {
+                PS.Add(new Qr_Pelicula(vPS.txtTitulo.Text, Convert.ToInt32(vPS.txtAño.Text), vPS.txtDirector.Text, vPS.cmbGenero.Text, vPS.txtSinopsis.Text, Convert.ToInt32(vPS.cmbRating.Text)));
+            }
+            if(vPS.rbtnSerie.IsChecked==true)
+            {
+                PS.Add(new Rs_Serie(vPS.txtTitulo.Text, Convert.ToInt32(vPS.txtAño.Text), vPS.txtProductor.Text, vPS.cmbGenero.Text, Convert.ToInt32(vPS.txbTemporadas.Text), vPS.txtSinopsis.Text, Convert.ToInt32(vPS.cmbRating.Text)));
+            }
+
+
             btnNueEle.Visibility = Visibility.Visible;
             btnAsTitulo.Visibility = Visibility.Visible;
             btnDesTitulo.Visibility = Visibility.Visible;
@@ -64,6 +69,7 @@ namespace ProyectoFinal3erParcial_Problemas_Con_El_Ateriror
             btnCanEleNuevo.Visibility = Visibility.Hidden;
             btnActEdicion.Visibility = Visibility.Hidden;
             btnEliElemento.Visibility = Visibility.Hidden;
+            grdEle.Children.Clear();
         }
 
         private void BtnCanEleNuevo_Click(object sender, RoutedEventArgs e)
@@ -226,6 +232,7 @@ namespace ProyectoFinal3erParcial_Problemas_Con_El_Ateriror
 
         private void BtnEliElemento_Click(object sender, RoutedEventArgs e)
         {
+            
             grdEle.Children.Clear();
             btnNueEle.Visibility = Visibility.Visible;
             btnAsTitulo.Visibility = Visibility.Visible;
@@ -285,6 +292,8 @@ namespace ProyectoFinal3erParcial_Problemas_Con_El_Ateriror
             vPS.txtDirector.IsEnabled = false;
             vPS.txtSinopsis.IsEnabled = false;
 
+            btnActEdicion.Visibility = Visibility.Hidden;
+            btnHabEdicion.Visibility = Visibility.Visible;
         }
 
         private void BtnCanEleNuevo_Click_1(object sender, RoutedEventArgs e)

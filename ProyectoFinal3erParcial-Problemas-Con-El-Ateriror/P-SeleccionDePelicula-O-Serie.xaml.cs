@@ -12,7 +12,7 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
-using System.Collections.ObjectModel;
+
 
 
 namespace ProyectoFinal3erParcial_Problemas_Con_El_Ateriror
@@ -22,27 +22,39 @@ namespace ProyectoFinal3erParcial_Problemas_Con_El_Ateriror
     /// </summary>
     public partial class P_SeleccionDePelicula_O_Serie : UserControl
     {
-        ObservableCollection<Q_PeliculaEAV> peliculaEavs = new ObservableCollection<Q_PeliculaEAV>();
-
         public P_SeleccionDePelicula_O_Serie()
         {
             InitializeComponent();
             rbtnPelicula.IsChecked = true;
-            grdSeriePelicula.Children.Add(new Q_PeliculaEAV());
         }
 
         private void RbtnPelicula_Checked(object sender, RoutedEventArgs e)
         {
-            grdSeriePelicula.Children.Clear();
-            grdSeriePelicula.Children.Add(new Q_PeliculaEAV());
-
-            peliculaEavs.Add(new Q_PeliculaEAV());
+            if (rbtnPelicula.IsChecked == true)
+            {
+              
+                txtProductor.Visibility = Visibility.Hidden;
+                txbProductor.Visibility = Visibility.Hidden;
+                txtTemporadas.Visibility = Visibility.Hidden;
+                txbTemporadas.Visibility = Visibility.Hidden;
+                lstDirector.Visibility = Visibility.Visible;
+                txtDirector.Visibility = Visibility.Visible;
+                cmbGenero.Visibility = Visibility.Visible;
+            }
         }
 
         private void RbtnSerie_Checked(object sender, RoutedEventArgs e)
         {
-            grdSeriePelicula.Children.Clear();
-            grdSeriePelicula.Children.Add(new R_SerieEAV());
+            if (rbtnSerie.IsChecked == true)
+            {
+              
+                txtProductor.Visibility = Visibility.Visible;
+                txbProductor.Visibility = Visibility.Visible;
+                txtTemporadas.Visibility = Visibility.Visible;
+                txbTemporadas.Visibility = Visibility.Visible;
+                lstDirector.Visibility = Visibility.Hidden;
+                txtDirector.Visibility = Visibility.Hidden;
+            }
         }
     }
 }

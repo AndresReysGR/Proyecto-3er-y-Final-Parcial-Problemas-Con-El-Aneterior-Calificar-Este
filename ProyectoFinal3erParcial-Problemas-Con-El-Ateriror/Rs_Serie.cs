@@ -9,7 +9,7 @@ namespace ProyectoFinal3erParcial_Problemas_Con_El_Ateriror
     class Rs_Serie : T_Extra2
     {
        
-        public Rs_Serie(string titulo, int año, string genero, int temporada, string productor, string descripcion, int rating)
+        public Rs_Serie(string titulo, int año, string productor, string genero, int temporada,  string descripcion, int rating)
         {
             this.Titulo = titulo;
             this.Año = año;
@@ -20,9 +20,6 @@ namespace ProyectoFinal3erParcial_Problemas_Con_El_Ateriror
             this.Rating = rating;
             Tipo = "Serie";
         }
-        public override string ToString()
-        {
-            return this.Titulo + "   " + this.Año;
-        }
+       
     }
 }

@@ -10,7 +10,56 @@
         <TextBlock HorizontalAlignment="Left" TextWrapping="Wrap" Text="Agregar nuevo elemento" VerticalAlignment="Top" Margin="10,10,0,0" Height="39" Width="275" FontSize="24"/>
         <RadioButton x:Name="rbtnPelicula" Content="Pelicula" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="10,49,0,0"  Height="23" Width="88" FontSize="18" Checked="RbtnPelicula_Checked" />
         <RadioButton x:Name="rbtnSerie" Content="Serie" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="103,49,0,0" Height="23" Width="64" FontSize="18" Checked="RbtnSerie_Checked"/>
-        <Grid x:Name="grdSeriePelicula" HorizontalAlignment="Left" Height="218" Margin="10,73,0,0" VerticalAlignment="Top" Width="484"/>
-
+        <TextBlock HorizontalAlignment="Left" TextWrapping="Wrap" Text="Titulo:" VerticalAlignment="Top" Margin="17,98,0,0"/>
+        <TextBox x:Name="txtTitulo" HorizontalAlignment="Left" Height="23" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="414" Margin="68,98,0,0"/>
+        <TextBlock HorizontalAlignment="Left" TextWrapping="Wrap" Text="Año:" VerticalAlignment="Top" Margin="17,126,0,0"/>
+        <TextBox x:Name="txtAño" HorizontalAlignment="Left" Height="23" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="126" Margin="68,126,0,0"/>
+        <TextBlock HorizontalAlignment="Left" TextWrapping="Wrap" Text="Género:" VerticalAlignment="Top" Margin="213,129,0,0"/>
+        <ComboBox Name="cmbGenero" HorizontalAlignment="Left" VerticalAlignment="Top" Width="135" Margin="259,126,0,0">
+            <ComboBoxItem>Acción</ComboBoxItem>
+            <ComboBoxItem>Aventura</ComboBoxItem>
+            <ComboBoxItem>Comedia</ComboBoxItem>
+            <ComboBoxItem>Drama</ComboBoxItem>
+            <ComboBoxItem>Terror</ComboBoxItem>
+            <ComboBoxItem>Ciencia ficción</ComboBoxItem>
+            <ComboBoxItem>Suspenso</ComboBoxItem>
+        </ComboBox>
+          <TextBlock Name="lstDirector" HorizontalAlignment="Left" TextWrapping="Wrap" Text="Director:" VerticalAlignment="Top" Margin="17,165,0,0"/>
+        <TextBox x:Name="txtDirector" HorizontalAlignment="Left" Height="23" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="414" Margin="68,165,0,0"/>
+        <TextBlock HorizontalAlignment="Left" TextWrapping="Wrap" Text="Sinopsis:" VerticalAlignment="Top" Margin="17,194,0,0"/>
+        <TextBox x:Name="txtSinopsis" HorizontalAlignment="Left" Height="65" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="414" Margin="68,194,0,0"/>
+        <TextBlock HorizontalAlignment="Left" TextWrapping="Wrap" Text="Rating:" VerticalAlignment="Top" Margin="17,268,0,0"/>
+        <ComboBox x:Name="cmbRating" HorizontalAlignment="Left" VerticalAlignment="Top" Width="63" Margin="68,268,0,0" RenderTransformOrigin="0.764,0.614">
+            <ComboBoxItem>1</ComboBoxItem>
+            <ComboBoxItem>2</ComboBoxItem>
+            <ComboBoxItem>3</ComboBoxItem>
+            <ComboBoxItem>4</ComboBoxItem>
+            <ComboBoxItem>5</ComboBoxItem>
+        </ComboBox>
+        <TextBlock x:Name="txtTemporadas" Visibility="Hidden" HorizontalAlignment="Left" TextWrapping="Wrap" Text="Temporadas:" VerticalAlignment="Top" Margin="18,166,0,0"/>
+        <ComboBox x:Name="txbTemporadas" Visibility="Hidden" HorizontalAlignment="Left" VerticalAlignment="Top" Width="69" Margin="90,166,0,0">
+            <ComboBoxItem Content="1"/>
+            <ComboBoxItem Content="2"/>
+            <ComboBoxItem Content="3"/>
+            <ComboBoxItem Content="4"/>
+            <ComboBoxItem Content="5"/>
+            <ComboBoxItem Content="6"/>
+            <ComboBoxItem Content="7"/>
+            <ComboBoxItem Content="8"/>
+            <ComboBoxItem Content="9"/>
+            <ComboBoxItem Content="10"/>
+            <ComboBoxItem Content="11"/>
+            <ComboBoxItem Content="12"/>
+            <ComboBoxItem Content="13"/>
+            <ComboBoxItem Content="14"/>
+            <ComboBoxItem Content="15"/>
+            <ComboBoxItem Content="16"/>
+            <ComboBoxItem Content="17"/>
+            <ComboBoxItem Content="18"/>
+            <ComboBoxItem Content="19"/>
+            <ComboBoxItem Content="20"/>
+        </ComboBox>
+        <TextBlock x:Name="txtProductor" Visibility="Hidden" HorizontalAlignment="Left" TextWrapping="Wrap" Text="Productor:" VerticalAlignment="Top" Margin="214,165,0,0"/>
+        <TextBox x:Name="txbProductor" Visibility="Hidden" Height="23" TextWrapping="Wrap" VerticalAlignment="Top" Width="132" Margin="274,165,0,0" />
     </Grid>
 </UserControl>

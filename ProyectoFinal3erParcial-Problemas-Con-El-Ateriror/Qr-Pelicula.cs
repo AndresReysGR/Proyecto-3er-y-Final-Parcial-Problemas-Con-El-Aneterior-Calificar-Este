@@ -9,7 +9,7 @@ namespace ProyectoFinal3erParcial_Problemas_Con_El_Ateriror
     class Qr_Pelicula : T_Extra2
     {
       
-        public Qr_Pelicula(string titulo, int año, string genero, string director, string sinopsis, int rating)
+        public Qr_Pelicula(string titulo, int año, string director, string genero, string sinopsis, int rating)
         {
 
             this.Titulo = titulo;
@@ -20,9 +20,6 @@ namespace ProyectoFinal3erParcial_Problemas_Con_El_Ateriror
             this.Rating = rating;
             Tipo = "Pelicula";
         }
-        public override string ToString()
-        {
-            return this.Titulo + "   " + this.Año;
-        }
+      
     }
 }

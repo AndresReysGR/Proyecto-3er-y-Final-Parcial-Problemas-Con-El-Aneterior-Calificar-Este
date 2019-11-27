@@ -20,8 +20,6 @@
             <ComboBoxItem>Terror</ComboBoxItem>
             <ComboBoxItem>Musical</ComboBoxItem>
             <ComboBoxItem>Ciencia ficción</ComboBoxItem>
-            <ComboBoxItem>Bélicas</ComboBoxItem>
-            <ComboBoxItem>Wertern</ComboBoxItem>
             <ComboBoxItem>Suspenso</ComboBoxItem>
         </ComboBox>
         <TextBlock HorizontalAlignment="Left" TextWrapping="Wrap" Text="Temporadas:" VerticalAlignment="Top" Margin="10,76,0,0"/>
@@ -55,16 +53,11 @@
         <TextBox x:Name="txtDescripcion" HorizontalAlignment="Left" Height="65" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="381" Margin="79,109,0,0"/>
         <TextBlock HorizontalAlignment="Left" TextWrapping="Wrap" Text="Rating:" VerticalAlignment="Top" Margin="10,183,0,0"/>
         <ComboBox x:Name="cmbRating" HorizontalAlignment="Left" VerticalAlignment="Top" Width="53" Margin="52,183,0,0">
-            <ComboBoxItem>⭐</ComboBoxItem>
-            <ComboBoxItem>1✩</ComboBoxItem>
-            <ComboBoxItem>✩⭐</ComboBoxItem>
-            <ComboBoxItem>2✩✩</ComboBoxItem>
-            <ComboBoxItem>✩✩⭐</ComboBoxItem>
-            <ComboBoxItem>3✩✩✩</ComboBoxItem>
-            <ComboBoxItem>✩✩✩⭐</ComboBoxItem>
-            <ComboBoxItem>4✩✩✩✩</ComboBoxItem>
-            <ComboBoxItem>✩✩✩✩⭐</ComboBoxItem>
-            <ComboBoxItem>5✩✩✩✩✩</ComboBoxItem>
+            <ComboBoxItem>1</ComboBoxItem>
+            <ComboBoxItem>2</ComboBoxItem>
+            <ComboBoxItem>3</ComboBoxItem>
+            <ComboBoxItem>4</ComboBoxItem>
+            <ComboBoxItem>5</ComboBoxItem>
         </ComboBox>
 
     </Grid>

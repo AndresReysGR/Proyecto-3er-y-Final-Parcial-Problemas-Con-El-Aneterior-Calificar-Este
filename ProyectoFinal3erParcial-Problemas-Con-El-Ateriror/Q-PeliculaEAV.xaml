@@ -27,16 +27,11 @@
         <TextBox x:Name="txtSinopsis" HorizontalAlignment="Left" Height="65" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="414" Margin="60,114,0,0"/>
         <TextBlock HorizontalAlignment="Left" TextWrapping="Wrap" Text="Rating:" VerticalAlignment="Top" Margin="9,188,0,0"/>
         <ComboBox x:Name="cmbRating" HorizontalAlignment="Left" VerticalAlignment="Top" Width="63" Margin="60,188,0,0" RenderTransformOrigin="0.764,0.614">
-            <ComboBoxItem>⭐ </ComboBoxItem>
-            <ComboBoxItem>1✩ </ComboBoxItem>
-            <ComboBoxItem>✩⭐</ComboBoxItem>
-            <ComboBoxItem>2✩✩</ComboBoxItem>
-            <ComboBoxItem>✩✩⭐</ComboBoxItem>
-            <ComboBoxItem>3✩✩✩</ComboBoxItem>
-            <ComboBoxItem>✩✩✩⭐</ComboBoxItem>
-            <ComboBoxItem>4✩✩✩✩</ComboBoxItem>
-            <ComboBoxItem>✩✩✩✩⭐</ComboBoxItem>
-            <ComboBoxItem>5✩✩✩✩✩</ComboBoxItem>
-          </ComboBox>
+            <ComboBoxItem>1</ComboBoxItem>
+            <ComboBoxItem>2</ComboBoxItem>
+            <ComboBoxItem>3</ComboBoxItem>
+            <ComboBoxItem>4</ComboBoxItem>
+            <ComboBoxItem>5</ComboBoxItem>
+        </ComboBox>
     </Grid>
 </UserControl>
